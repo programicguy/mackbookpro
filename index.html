@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,12 +9,157 @@
     <!-- stylesheet linkup -->
     <link rel="stylesheet" href="./css/main.css" type="text/css">
 </head>
+
 <body>
-    <h2>Hello world!</h2>
 
+    <!-- create two column grid -->
+    <div class="container">
+        <div class="wrapper">
+            <div class="col-1">
+                <!-- create images gallery for product-->
+                <div class="gallery">
+                    <!-- Large image  -->
+                    <div class="lg-img">
+                        <img id="lg-img" src="./images/backpack-1.jpg" alt="">
+                    </div>
+                    <!-- Small images grid  -->
+                    <div class="sm-img">
+                        <img id="sm-img-1" src="./images/backpack-2.jpg" alt="">
+                        <img id="sm-img-2" src="./images/backpack-3.jpg" alt="">
+                        <img id="sm-img-2" src="./images/backpack-3.jpg" alt="">
+                        <img id="sm-img-2" src="./images/backpack-3.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="col-2">
 
+                <!-- Vendor name -->
 
+                <div class="vendor">
+                    <h4>BACKPACK</h4>
+                </div>
+
+                <!-- product title  -->
+
+                <div class="product-title">
+                    <h1>Student Backpack</h1>
+                </div>
+
+                <!-- product review -->
+
+                <div class="product-reviews">
+                    <div class="rating">
+                        <img src="./images/star-full.png" alt="">
+                        <img src="./images/star-full.png" alt="">
+                        <img src="./images/star-full.png" alt="">
+                        <img src="./images/star-full.png" alt="">
+                        <img src="./images/star-blank.png" alt="">
+                    </div>
+                    <div class="review-text">
+                        <h4>4.8 (410 reviews)</h4>
+                    </div>
+                </div>
+
+                <!-- select quality btn  -->
+
+                <div class="select-quality-btn">
+                    <div class="section-heading">
+                        <h3>Select Quality</h3>
+                        <div class="select-btns">
+                            <button>Basic</button>
+                            <button>Premium</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- select style btn  -->
+
+                <div class="select-style-btn">
+                    <div class="section-heading">
+                        <h3>Select Size</h3>
+                        <div class="style-btns">
+                            <button>XL</button>
+                            <button>Twin XL</button>
+                            <button>Full</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- delivery options -->
+
+                <div class="delivery-options">
+                    <div class="section-heading">
+                        <h3>Choose Your Delivery Option</h3>
+                        <div class="delivery-btns">
+                            <button>Friday, Aug 25 FREE Prime Delivery</button>
+                            <button>Friday, Aug 21 Delivery Charge $20</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- pricing table  -->
+
+                <div class="pricing-table">
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td>Best Price</td>
+                                <td>$<span id="best-price">0</span></td>
+                            </tr>
+                            <tr>
+                                <td>Quality Cost</td>
+                                <td>$<span id="quality-price">0</span></td>
+                            </tr>
+                            <tr>
+                                <td>Style Cost</td>
+                                <td>$<span id="style-price">0</span></td>
+                            </tr>
+                            <tr>
+                                <td>Delivery Charge</td>
+                                <td>$<span id="delivery-price">0</span></td>
+                            </tr>
+                            <tr>
+                                <td>Total Price</td>
+                                <td>$<span id="total-price">0</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="promo-code">
+                        <label for="promo-code">Add Promo Code</label>
+                        <input type="text" id="promo-code">
+                        <button id="apply-btn">Apply</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- fixed add to cart  -->
+        <div class="fixed-add-to-cart">
+            <div class="cart-img">
+                <img id="cart-img" src="./images/backpack-1.jpg" alt="">
+                <div class="cart-text">
+                    <h3>Student Backpack</h3>
+                    <p>Perfect for everywhwere...</p>
+                </div>
+            </div>
+
+            <div class="quantity-picker">
+                <div class="add-quantity">
+                    <button id="remove-quantity">-</button>
+                    <input type="number" min="0" id="quantity">
+                    <button id="add-quantity">+</button>
+                </div>
+            </div>
+            <div class="total-prices">
+                <h2>$<span id="total-price">0</span></h2>
+            </div>
+
+            <div class="add-to-cart">
+                <button>Add To Cart (<span id="quantity">0</span>)</button>
+            </div>
+        </div>
+    </div>
     <!-- js file linkup -->
     <script src="./js/main.js" type="text/javascript"></script>
 </body>
+
 </html>

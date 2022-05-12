@@ -3,3 +3,283 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+body {
+    font-family: sans-serif;
+}
+
+/* make 2 grid */
+
+.container {
+    padding: 20px;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+/* work on 1st grid  */
+
+.col-1 {
+    text-align: center;
+}
+
+.gallery img {
+    width: 100%;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+/* work on product thumbnaill image  */
+
+#lg-img {
+    width: 80%;
+}
+
+.sm-img {
+    display: flex;
+    justify-content: center;
+}
+
+.sm-img img {
+    width: 100px;
+    margin: 10px;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+.sm-img img:hover {
+    opacity: 0.8;
+}
+
+/* work on 2d grid  */
+.col-2 {
+    margin-top: 50px;
+}
+
+.vendor h4 {
+    font-size: 14px;
+    font-weight: 600;
+    color: #aaa;
+}
+
+.product-title h1 {
+    font-size: 36px;
+    font-weight: 600;
+    margin: 5px 0;
+}
+
+.product-reviews {
+    display: flex;
+    align-items: center;
+}
+
+.product-reviews .rating img {
+    width: 12px;
+}
+
+.review-text h4 {
+    font-size: 12px;
+    font-weight: 400;
+    margin-left: 10px;
+}
+
+.section-heading h3 {
+    font-size: 16px;
+    font-weight: 600;
+    margin: 15px 0;
+}
+
+.btn-grid {
+    display: flex;
+    align-items: center;
+}
+
+.select-btns button,
+.style-btns button,
+.delivery-btns button {
+    padding: 8px 30px;
+    border: 1px solid #dfdfdf;
+    background: white;
+    border-radius: 20px;
+    margin-right: 10px;
+    transition: .2s all ease-in-out;
+    cursor: pointer;
+}
+
+.select-btns button:hover,
+.style-btns button:hover,
+.delivery-btns button:hover {
+    background-color: #ededed;
+}
+
+.select-btns button:focus {
+    outline: 1px solid #000;
+    background-color: #ededed;
+}
+
+.delivery-options {
+    padding-bottom: 30px;
+    border-bottom: 1px solid #dfdfdf;
+    border-radius: 5px;
+}
+
+/* work on the pricing table  */
+.pricing-table {
+    margin-top: 20px;
+    padding: 20px 0;
+}
+
+table {
+    width: 50%;
+}
+
+table tr td {
+    border-bottom: 1px solid #dfdfdf;
+    padding: 10px 0;
+    font-size: 14px;
+}
+
+tr:nth-child(2) {
+    border: 2px solid #aaa;
+
+}
+
+
+/* work on promo code section  */
+
+.promo-code {
+    padding: 20px 0;
+    margin-bottom: 50px;
+}
+
+.promo-code label {
+    display: block;
+    font-size: 16px;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+.promo-code input {
+    padding: 10px;
+    border: 1px solid #dfdfdf;
+    outline: none;
+    border-radius: 4px;
+}
+
+#apply-btn {
+    padding: 10px 20px;
+    border: 1px solid #dfdfdf;
+    color: #dfdfdf;
+    background: blueviolet;
+    border-radius: 2px;
+    margin-right: 10px;
+    transition: .3s all ease-in-out;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+#apply-btn:hover {
+    color: #000;
+    background-color: #ededed;
+}
+
+#apply-btn:focus {
+    outline: 1px solid #000;
+    background-color: #ededed;
+    color: #000;
+}
+
+/* work add to cart section  */
+
+.fixed-add-to-cart {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: aliceblue;
+    padding: 10px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.cart-img {
+    display: flex;
+    align-items: center;
+}
+
+#cart-img {
+    width: 50px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-right: 20px;
+}
+
+.cart-text h3 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 2px;
+}
+
+.cart-text p {
+    font-size: 12px;
+    font-weight: 400;
+}
+
+/* work on quantity input field */
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.quantity-picker #quantity {
+    width: 40px;
+    font-size: 15px;
+    font-weight: 600;
+    border: 1px solid #dfdfdf;
+    outline: none;
+    padding: 6px;
+    border-radius: 3px;
+}
+
+.quantity-picker #remove-quantity,
+.quantity-picker #add-quantity {
+    font-size: 18px;
+    font-weight: 600;
+    border: 1px solid #dfdfdf;
+    background-color: #fff;
+    padding: 4px 10px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.quantity-picker #remove-quantity:focus,
+.quantity-picker #add-quantity:focus {
+    outline: 1px solid #aaa;
+
+}
+
+/* work on total price on add to cart section  */
+
+.total-prices h2 {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+/* work on add to cart btn  */
+
+.add-to-cart button {
+    padding: 12px 20px;
+    border: 1px solid #dfdfdf;
+    color: #dfdfdf;
+    background: blueviolet;
+    border-radius: 2px;
+    margin-right: 10px;
+    transition: .3s all ease-in-out;
+    cursor: pointer;
+    border-radius: 4px;
+}
